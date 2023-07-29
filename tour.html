@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>旅游风景</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" href="base.css">
+	<script src="base.js"></script>
+	<style>
+		.tour-img{
+			/*height: 3000px;*/
+		}
+		.tour-img img{
+			width: 100%;
+			height: 600px;
+			transform: translateY(-400px);
+
+			opacity: .5;
+			transition: all 1s;
+		}
+		.tour-wrapper{
+			/*height: 2000px;*/
+			margin-top: 10px;
+		}
+		.tour-box{
+			display: inline-block;
+			width: 380px;
+			height:500px;
+			overflow: hidden;
+			/*background-color: red;*/
+			box-sizing: border-box;
+			border: 1px solid rgba(0, 0, 0, .1);
+			margin-top: 20px;
+			margin-right: 30px;
+
+			transition: all 1s;
+			transform: translateY(500px);
+		}
+		.tour-wrapper div:hover{
+			box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+		}
+		.tour-wrapper div:nth-child(2n+3){
+			margin-right: 0;
+		}
+		.tour-box img{
+			width: 100%;
+			height: 250px;
+		}
+		.tour-box h3{
+			text-align: center;
+		}
+		.tour-box p{
+			cursor: default;
+			padding: 5px 20px;
+			color: rgba(0, 0, 0, .6);
+			font-size: 15px;
+		}
+		h1{
+			text-align: center;
+			color: green;
+			transform: translateX(-600px);
+			transition: all 1s;
+		}
+		h1::after{
+			content: '';
+			display: block;
+			background-color: green;
+			width: 100%;
+			height: 2px;
+		}
+	</style>
+</head>
+<body>
+		<!-- 设置顶部状态栏 -->
+    <div class="top-status-wrapper">
+    	<div class="top-status w">
+    		<span class="top-time">北京时间：2022/11/26 01:03:44</span>
+    		<div class="user-status">
+    			欢迎访问! 请 
+    			<a style="font-size: 18px;color: red;" href="login.html">登录</a>
+    			或 
+    			<a style="font-size: 18px;color: red;" href="register.html">注册</a>
+    		</div>
+    		<div class="logout">退出登录</div>
+    	</div>
+    </div>
+	<!-- 设置顶部导航条 -->
+	<div class="top-bar w">
+		<div class="logo"><a href="index.html"><img src="imgs/logo.png" alt=""></a></div>
+        <ul class="top-inner">
+            <li><a href="message.html">欢迎留言</a></li>
+            <li><a href="food.html">来宾美食</a></li>
+            <li><a href="tour.html">旅游风景</a></li>
+            <li><a href="history.html">历史沿革</a></li>
+            <li><a href="index.html">首页</a></li>
+        </ul>
+	</div>
+
+	<div class="tour-inner w">
+		<div class="tour-img">
+			<img src="imgs/tour01.jpg" alt="">
+		</div>
+		<h1>来宾风景</h1>
+		<div class="tour-wrapper">
+			<div class="tour-box">
+				<img src="imgs/tour02.jpg" alt="">
+				<h3>莲花山</h3>
+				<p>
+					广西金秀瑶族自治县位于桂中偏东的大瑶山区，因为广西大瑶山的主体山脉在金秀瑶族自治县境内，因此，又叫金秀大瑶山。全县总面积2500多平方公里， 其中省级风景名胜区面积为500多平方公里，县境内森林覆盖率达87%以上，连片的原始森林就有60多万亩。所以，金秀大瑶山既是广西最大的绿色水库，又是国家森林公园和国家级自然保护区。而金秀也是因此得名，取金山秀水之意。
+				</p>
+			</div>
+			<div class="tour-box">
+				<img src="imgs/tour03.jpg" alt="">
+				<h3>圣堂山</h3>
+				<p>
+					大瑶山主峰圣塘山，又名圣堂山。为泥盆系紫红色砾岩和砂石组成，经自然力的作用和地表水长期侵蚀、切割、风化，崩解为丹峰挺拔、朱崖壁立、棱角刚锐、峡谷幽深的大瑶山丹霞式刚棱削面塔柱地貌。
+				</p>
+			</div>
+			<div class="tour-box">
+				<img src="imgs/tour04.jpg" alt="">
+				<h3>文辉塔</h3>
+				<p>
+					文辉塔，位于广西来宾市迁江镇扶济村，背靠红水河，自建以来有过多次修复。原塔建自何时无考，今塔为明万历年间（公元1573~1620年）迁江县武举、八所指挥、守备、三里营参将黄文辉重建，因名文辉塔。
+				</p>
+			</div>
+			<div class="tour-box">
+				<img src="imgs/tour05.jpg" alt="">
+				<h3>百崖大峡谷</h3>
+				<p>
+					百崖大峡谷是广西区级风景名胜区，有“广西九寨沟”之称，位于来宾市武宣县东乡镇境内，距武宣县城38公里。属典型的丹霞地貌，最高海拔1200米，总面积13.66平方公里。峡谷峰峦险峻、峡岩逼空；清溪百折、飞瀑壮观；林木苍翠花香袭人；朝出晴岚、幕纳霞辉；被誉为“世界罕见的峡谷风光”。
+				</p>
+			</div>
+		</div>
+	</div>
+
+		<!-- 设置返回顶部块 -->
+	<div class="totop">
+		<div>
+			<img src="imgs/totop.png" alt="">
+			<span>回顶部</span>
+		</div>
+	</div>
+
+	<div class="footer">
+		<h4>2022-2023-1学期 Web前端开发技术课程设计 韦鸿浪 202009601047 软件Q202</h4>
+	</div>
+
+	<script>
+		let img = document.querySelector('.tour-img img')
+		let boxs = document.querySelectorAll('.tour-box')
+		let h1 = document.querySelector('h1')
+		window.addEventListener('load', function() {
+			img.style.transform = 'translateY(0)'
+			img.style.opacity = '1'
+
+			for (let i = 0;i < boxs.length; i++){
+				boxs[i].style.transform = 'translateY(0)'
+			}
+
+			h1.style.transform = 'translateX(0)'
+		})
+	</script>
+</body>
+</html>
